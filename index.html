@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>
-		John Zachary Orr
+		Zac Orr
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,15 +19,7 @@
 	<!--Animations.css-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-	<!-- add in from Resume.css in Sublime file
-	<link rel="stylesheet" type="text/css" href="Resume.css">
-
-	<!-- add in from Resume.js in Sublime file
-	<script type="text/javascript" src="Resume.js"></script>-->
-
 <style type="text/css">
-		
-
 body {
 	background-color: #242520;
 	font-family: sans-serif;
@@ -40,36 +32,41 @@ p{
 
 header{
 	text-align: left;
-	
 	margin-right: 20px;
 }
 
 header ul li{
 	display: inline;
+	margin-left: 0px;
 }
 
 .header2 {
 	position: bottom;
 	bottom: 0px;
 	margin-bottom: 0px;
+	text-align: left;
 }
 
 .header h1 {
 	font-size: 30px;
 	color: tan;
 	font-style: bold;
+	margin-left: 50px;
 }
 
 .header h2 {
 	font-size: 25px;
+	margin-left: 50px;
 }
 
 .links {
 	font-size: 15px;
+	text-align: left;
 }
 
 .intro {
 	text-align: left;
+	margin-left: 50px;
 }
 
 h4{
@@ -100,7 +97,9 @@ ul li{
 ul li span {
 	color: grey;
 }
-
+ul li p {
+	color: grey;
+}
 
 #hover {
 	display: none;
@@ -114,13 +113,14 @@ ul li span {
 	background-color: transparent;
 	border: none;
 	font-size: 16px;
-	-webkit-animation-duration: 3s;
+	/*-webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
-    -webkit-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;*/
     color: tan;
 }
 
 #edu_button:hover {
+	cursor: crosshair;
 	color: red;
 }
 
@@ -128,14 +128,15 @@ ul li span {
 	background-color: transparent;
 	border: none;
 	font-size: 16px;
-	-webkit-animation-duration: 3s;
+	/*-webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
-    -webkit-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;*/
     color: tan;
 }
 
 #his_button:hover {
 	color: red;
+	cursor: crosshair;
 }
 
 .hidden>div{
@@ -146,40 +147,9 @@ ul li span {
 	display: block;
 }
 
-\@-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-}
-
-@-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-.button {
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
-}
-
 .listTabs{
 	color: #FFFFE0;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 #quote {
@@ -187,34 +157,35 @@ ul li span {
 	font-size: 14px;
 
 }
-
 </style>
 <script>
-	$(document).ready(function(){
+// got code from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-    $("#edu_button").click(function(){
-        $("#edu ul").toggle();
-    });
+function myEduFunction(){
+	var x = document.getElementById('edu');
+		if (x.style.display === 'none'){
+			x.style.display = 'block';
+		}else {
+			x.style.display = 'none';
+		}
+}
 
-  });
-   
+function myHisFunction(){
+	var x = document.getElementById('his');
+		if (x.style.display === 'none'){
+			x.style.display = 'block';
+		}else {
+			x.style.display = 'none';
+		}
+}
 
-$(document).ready(function(){
-    $("#his_button").click(function(){
-        $("#his ul").toggle();
-    });
-});
-
-</script>
-	
+</script>	
 </head>
-
 <body>
-
 <div class="container-fluid jumbotron">
 	<div class="header">
   		<h1>John "Zac" Orr</h1>
-    	</div>
+    </div><!--header-->
 	<div class="intro">
 			<h4>Quality Assurance Manager at <a href="http://fjturbinepower.net/" target="_blank" class="links animated pulse">FJ Turbine Power, Inc.</a> and engineering student at <a href="https://www.asu.edu/" target="_blank" class="links animated pulse">ASU</a></h4> 	
 	</div><!--intro div-->
@@ -229,7 +200,7 @@ $(document).ready(function(){
 		</header>
 	</div><!-- footer class-->
 <br>
-<button id="edu_button" class="animated pulse" >Education</button>
+<button onclick="myEduFunction()" id="edu_button" class="animated pulse" >Education</button>
 	<div id="edu" >
 		<ul style="list-style-type: circle">
 			<li><span>
@@ -248,14 +219,15 @@ $(document).ready(function(){
 	</div>
 	<p id="quote" >"A true master is an eternal student" - Master Yi</p>
 <br>
-<button id="his_button" class= "animated pulse">History</button>	
+<button onclick="myHisFunction()" id="his_button" class= "animated pulse">History</button>	
 	<div id="his">
 		<ul style="list-style-type: circle;">
-			<li><span>
-				<span class="listTabs">June 2016</span><br>
-				<p style="font-size:13px">Began full time at 
-  				FJ Turbine Power, Inc.</p>
-			</span></li>
+			<li><span class="listTabs">June 2016 </span><span>started full time at FJ Turbine Power, Inc.</span></li>
+			<li><span class="listTabs">May 2016 </span><span>ended active duty tour</span></li>	
+			<li><span class="listTabs">April 2015 </span><span>returned from deployment</span></li>
+			<li><span class="listTabs">Sep 2014 </span><span>deployed in support of Operation Inherent Resolve</span></li>
+			<li><span class="listTabs">June 2014 </span><span>graduated with highest honors from Nondestructive Inspectors course from NAS Pensacola, FL.</span></li>
+			<li><span class="listTabs">May 2012 </span><span>stationed in MCAS Yuma, AZ.</span></li>	
 		</ul>			
 	</div><!-- his-->
 </body>
