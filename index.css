@@ -1,0 +1,135 @@
+index.css
+body {
+	background-color: #242520;
+	font-family: sans-serif;
+	margin-top: 0px;
+}
+
+p{
+	font-size:10px;
+}
+
+header{
+	text-align: left;
+	margin-right: 20px;
+}
+
+header ul li{
+	display: inline;
+	margin-left: 0px;
+}
+
+.header2 {
+	position: bottom;
+	bottom: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+.header h1 {
+	font-size: 30px;
+	color: tan;
+	font-style: bold;
+	margin-left: 50px;
+}
+
+.header h2 {
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+.links {
+	font-size: 15px;
+	text-align: left;
+}
+
+.intro {
+	text-align: left;
+	margin-left: 50px;
+}
+
+h4{
+	font-size: 15px;
+}
+
+.jumbotron {
+	background-color: #242520;
+	border-radius: 5px;
+	color: grey;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+a {
+	color: white;
+    font-size: 15px;
+    cursor: crosshair;
+}
+
+ul li{
+	color: red;
+}
+
+ul li span {
+	color: grey;
+}
+ul li p {
+	color: grey;
+}
+
+#military {
+	color: green;
+}
+
+#work {
+	color: red;
+}
+
+#personal {
+	color: orange;
+}
+
+#school{
+	color: #2F5ED6;
+}
+
+#hover {
+	display: none;
+}
+
+#list:hover + #hover{
+	display: block;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	/*-webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;*/
+    color: tan;
+}
+
+button:hover{
+	color: #00450A;
+	cursor: crosshair;
+}
+
+.hidden>div{
+	display: none;
+}
+
+.visable>div{
+	display: block;
+}
+
+.listTabs{
+	color: #FFFFE0;
+	font-size: 13px;
+}
+
+#quote {
+	color: black;
+	font-size: 14px;
+}
