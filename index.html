@@ -179,6 +179,14 @@ function myHisFunction(){
 		}
 }
 
+function myProjFunction(){
+	var x = document.getElementById('proj');
+		if (x.style.display === 'none'){
+			x.style.display = 'block';
+		}else {
+			x.style.display = 'none';
+		}
+
 // the code to have the buttons closed by default is from https://www.sitepoint.com/community/t/hide-then-onclick-show-table-rows/31642/2
 // I had to add the style="display:none;" to the div for each button. 
 </script>	
@@ -244,7 +252,12 @@ function myHisFunction(){
 
 <button onclick="myProjFunction()" id="proj_button" class="animated pulse">Projects</button>
 	<div id="proj" style="display: none;">
-
+	<ul>
+		<li id="personal"><span class="listTabs">CSE-205</span><span>
+		In my GitHub repositories I have uploaded my current projects completed throughout my Java programming courses.</span></li>
+		<li id="work"><span class="listTabs">FJ Turbine Power</span><span>
+		I am frequently updating and running test-and-checks using HTML/CSS/JS to ensure employees have the most up-to-date information regarding company documents and information.</span></li>
+	</ul>
 	</div>
 <br>
 
