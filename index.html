@@ -187,6 +187,15 @@ function myProjFunction(){
 			x.style.display = 'none';
 		}
 }
+
+function myCertFunction(){
+	var x = document.getElementById('proj');
+		if (x.style.display === 'none'){
+			x.style.display = 'block';
+		}else {
+			x.style.display = 'none';
+		}
+}
 // the code to have the buttons closed by default is from https://www.sitepoint.com/community/t/hide-then-onclick-show-table-rows/31642/2
 // I had to add the style="display:none;" to the div for each button. 
 </script>	
@@ -261,11 +270,15 @@ function myProjFunction(){
 	</div>
 <br>
 
-<!-- <button onclick="myCertFunction()" id="cert_button" class="animated pulse">Certifications</button>
+<button onclick="myCertFunction()" id="cert_button" class="animated pulse">Certifications</button>
 	<div id="cert" style="display: none;">
-		
+	<ul>
+		<li id="work"><span class="listTabs">FAA Repairman Certificate</span><span>Powerplant</span></li>
+		<li id="work"><span class="listTabs">Nondestructive Evaluation Journeyman</span><span>Department of Labor</span></li>
+		<li id="work"><span class="listTabs">Airframe Mechanic Journeyman</span><span>Department of Labor</span></li>
+	</ul>
 	</div>
- -->
+
  <br>
 
 </body>
