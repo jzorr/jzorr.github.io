@@ -32,7 +32,7 @@ body {
 }
 
 p{
-	font-size:10px;
+	/*font-size:10px;*/
 }
 
 header{
@@ -163,6 +163,39 @@ button:hover{
 	color: black;
 	font-size: 14px;
 }
+
+/*
+---------------------This starts the RockPaperScissors game---------
+*/
+.header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game {
+    text-align: center;
+    color: white;
+    /*font-size: 12px;*/
+}
+
+.tryAgain{
+    text-align: center;
+}
+button{
+    margin: 20px;
+}
+
+.yesPlay{
+    text-align: center;
+}
+
+#myP{
+	/*font-size: 12px;*/
+}
+
+#compChoice{
+	font-size: 12px;
+}
 </style>
 <script>
 // got code from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
@@ -213,7 +246,7 @@ function myCertFunction(){
     </div><!--header-->
 	<div class="intro">
 			<h4>Quality Assurance Manager at <a href="http://fjturbinepower.net/" target="_blank" class="links animated pulse">FJ Turbine Power, Inc.</a>, engineering student at <a href="https://www.asu.edu/" target="_blank" class="links animated pulse">ASU</a>, and <a href="http://www.marines.mil/" target="_blank" class="links">USMC</a> veteran.</h4> 	
-	</div><!--intro div-->
+	</div><!--intro-->
 	<div class="header2">
 		<header>
 			<ul class="links">
@@ -224,31 +257,31 @@ function myCertFunction(){
 				<li><a href="https://www.dropbox.com/s/t1snp415vbqio5i/JohnZOrr_Resume.docx?dl=0" style="margin: 10px; text-decoration: none" target="_blank" class=" animated pulse">Resumé</a></li>	
 			</ul>
 		</header>
-	</div><!-- footer class-->
+	</div><!-- header class-->
 <br>
 
 <div class="body1">
-	<button onclick="myEduFunction()" id="edu_button" class="animated pulse" >Education</button>
-		<div id="edu" style="display: none" >
-			<ul>
-				<li id="school"><span>
-					<span class="listTabs">Arizona State University</span><br>
-					<p style="font-size: 13px">B.S.E, Engineering Management (GPA 3.51/4.0)<br>
-					<em>Expected graduation in 2020</em><br>		
-			  		- Software Engineering focus<br> - ABET EAC Accredited</p>	
-				</span></li>
-				<li id="school"><span>
-					<span class="listTabs" >Santa Fe College</span><br>
-					<p style="font-size: 13px">Associates of Arts,  
-					Recreation<br>
-					2006-2008</p>
-				</span></li><!-- school class-->
-			</ul>
-		</div>
+		<button onclick="myEduFunction()" id="edu_button" class="animated pulse" >Education</button>
+			<div id="edu" style="display: none" >
+				<ul>
+					<li id="school"><span>
+						<span class="listTabs">Arizona State University</span><br>
+						<p style="font-size: 13px">B.S.E, Engineering Management (GPA 3.51/4.0)<br>
+						<em>Expected graduation in 2020</em><br>		
+				  		- Software Engineering focus<br> - ABET EAC Accredited</p>	
+					</span></li>
+					<li id="school"><span>
+						<span class="listTabs" >Santa Fe College</span><br>
+						<p style="font-size: 13px">Associates of Arts,  
+						Recreation<br>
+						2006-2008</p>
+					</span></li><!-- school class-->
+				</ul>
+			</div><!-- #edu-->
 	<br>
 
-	<button onclick="myHisFunction()" id="his_button" class= "animated pulse">History</button>	
-		<div id="his" style="display: none;">
+		<button onclick="myHisFunction()" id="his_button" class= "animated pulse">History</button>	
+			<div id="his" style="display: none;">
 			<ul>
 				<li id="personal"><span class="listTabs">Sep 2016 </span><span>my daughter, Lilly, was born!</span></li>
 				<li id="school"><span class="listTabs">Jul 2016 </span><span>began courses at Arizona State University</span></li>
@@ -267,30 +300,98 @@ function myCertFunction(){
 		</div><!-- his id-->
 	<br>
 
-	<button onclick="myProjFunction()" id="proj_button" class="animated pulse">Projects</button>
-		<div id="proj" style="display: none;">
-			<ul>
-				<li id="school"><span class="listTabs">CSE-205</span><span>
-				In my GitHub repositories I have uploaded my current projects completed throughout my Java programming courses.</span></li>
-				<li id="work"><span class="listTabs">FJ Turbine Power</span><span>
-				I am frequently updating and running test-and-checks using HTML/CSS/JS to ensure employees have the most up-to-date information regarding company documents and information.</span></li>
-				<li id="personal"><span class="listTabs">Rock-Paper-Scissors</span><span> I have created a simple game of rock-paper-scissors in GitHub, follow <a href="https://github.com/jzorr/RockPaperScissors" target="_blank">this link</a> to try it out!</span></li>
-			</ul>
-		</div> <!-- proj id-->
+		<button onclick="myProjFunction()" id="proj_button" class="animated pulse">Projects</button>
+			<div id="proj" style="display: none;">
+				<ul>
+					<li id="school"><span class="listTabs">CSE-205</span><span>
+					In my GitHub repositories I have uploaded my current projects completed throughout my Java programming courses.</span></li>
+					<li id="work"><span class="listTabs">FJ Turbine Power</span><span>
+					I am frequently updating and running test-and-checks using HTML/CSS/JS to ensure employees have the most up-to-date information regarding company documents and information.</span></li>
+					<li id="personal"><span class="listTabs">Rock-Paper-Scissors</span><span> I have created a simple game of rock-paper-scissors in GitHub, follow <a href="https://github.com/jzorr/RockPaperScissors" target="_blank">this link</a> to try it out!</span></li>
+				</ul>
+			</div> <!-- proj id-->
 	<br>
 
-	<button onclick="myCertFunction()" id="cert_button" class="animated pulse">Certifications</button>
-		<div id="cert" style="display: none;">
-			<ul>
-				<li id="work"><span class="listTabs">FAA Repairman Certificate </span><span> Powerplant</span></li>
-				<li id="work"><span class="listTabs">Nondestructive Evaluation Journeyman </span><span> Department of Labor</span></li>
-				<li id="work"><span class="listTabs">Airframe Mechanic Journeyman </span><span> Department of Labor</span></li>
-			</ul>
-		</div> <!-- cert id-->
- </div>
-</div>
+		<button onclick="myCertFunction()" id="cert_button" class="animated pulse">Certifications</button>
+			<div id="cert" style="display: none;">
+				<ul>
+					<li id="work"><span class="listTabs">FAA Repairman Certificate </span><span> Powerplant</span></li>
+					<li id="work"><span class="listTabs">Nondestructive Evaluation Journeyman </span><span> Department of Labor</span></li>
+					<li id="work"><span class="listTabs">Airframe Mechanic Journeyman </span><span> Department of Labor</span></li>
+				</ul>
+			</div> <!-- cert id-->
+</div><!--body1-->
+ 
+ 	<!----------------------------- This begins the html for the rock paper scissors game ------------------------>
+   <div class="yesPlay">
+            <button onclick="myFunction()">Click here to play Rock-Paper-Scissors</button>
+   </div> 
 
- <br>
+	<div class="game" style="">    
+     <div id="compChoice">
+     	<script type="text/javascript" >
+     	function myFunction(){
+            var userChoice = prompt("Do you choose rock, paper or scissors?");
+     		 var computerChoice = Math.random();
+            if (computerChoice < 0.34) {
+                computerChoice = "rock";
+            } else if(computerChoice <= 0.67) {
+                computerChoice = "paper";
+            } else {
+                computerChoice = "scissors";
+            } //console.log("Computer: " + computerChoice);
+
+            var x = ("<p>The computer picked:" + " " + computerChoice + "</p>");                              
+
+            var compare = function (choice1, choice2){
+                if (choice1 === choice2){
+                     return ("The result is a tie!");
+                }
+                
+                else if (choice1 === "rock"){
+                    if (choice2 === "scissors"){
+                        return ("Rock beats Scissors. You win!");
+                    }
+                    else{
+                        return ("Paper beats rock. You lose.");   
+                    }
+                }
+                
+                else if (choice1 === "paper"){
+                    if (choice2 === "rock"){
+                        return ("Paper beats Rock. You won!");
+                    }
+                    else{
+                        return ("Scissors beats Paper. You lose.");
+                    }      
+                }
+
+                else if (choice1 === "scissors"){
+                    if (choice2 === "paper"){
+                        return ("Scissors beats Paper. You win!");
+                    }
+                    else{
+                        return ("Rock beats Scissors. You lose.");
+                    }      
+                }
+            
+                if (userChoice != "rock" || "paper" || "scissors"){
+                     var nope = "You entered an invalid response.";
+                     return (nope);
+                }
+            }
+
+            var result = compare(userChoice, computerChoice);
+             document.getElementById("myP").style.font = "17px sans-serif";
+            document.getElementById("myP").innerHTML = (x + result);           
+        }
+     	</script>   	
+      </div>
+     <p id="myP"></p>           
+	</div> <!--game end-->
+   
+  </div>
+</div>
 
 </body>
 </html>
