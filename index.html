@@ -35,6 +35,11 @@ p{
 	/*font-size:10px;*/
 }
 
+.header{
+    text-align: left;
+    margin-top: 20px;
+}
+
 header{
 	text-align: left;
 	margin-right: 20px;
@@ -84,6 +89,7 @@ h4{
 	color: grey;
 	margin-left: 200px;
 	margin-right: 200px;
+	margin-bottom: 0;
 }
 
 .body1{
@@ -142,7 +148,7 @@ button {
 }
 
 button:hover{
-	color: #00450A;
+	color: #4b5320;
 	cursor: crosshair;
 }
 
@@ -167,9 +173,8 @@ button:hover{
 /*
 ---------------------This starts the RockPaperScissors game---------
 */
-.header{
-    text-align: center;
-    margin-top: 50px;
+.gameDiv{
+	margin:0;
 }
 
 .game {
@@ -182,7 +187,7 @@ button:hover{
     text-align: center;
 }
 button{
-    margin: 20px;
+    margin-bottom: 10px;
 }
 
 .yesPlay{
@@ -190,7 +195,7 @@ button{
 }
 
 #myP{
-	/*font-size: 12px;*/
+	color: grey;
 }
 
 #compChoice{
@@ -252,7 +257,7 @@ function myCertFunction(){
 			<ul class="links">
 				<li><a href="https://www.linkedin.com/in/johnzorr/" style="margin: 10px; text-decoration: none;" target="_blank" class=" animated pulse">LinkedIn</a></li>
 				<li><a href="https://github.com/jzorr" style="margin: 10px; text-decoration: none" target="_blank" class=" animated pulse">GitHub</a></li>
-				<li><a href="https://codepen.io/jzo3/#" target="_blank" class="animated pulse">CodePen</a></li>
+				<li><a href="https://codepen.io/jzo3/#" style="margin: 10px; text-decoration: none" target="_blank" class="animated pulse">CodePen</a></li>
 				<li><a href="mailto:zac.orr@gmail.com" style="margin: 10px; text-decoration: none" target="_blank" class=" animated pulse">Email</a></li>
 				<li><a href="https://www.dropbox.com/s/t1snp415vbqio5i/JohnZOrr_Resume.docx?dl=0" style="margin: 10px; text-decoration: none" target="_blank" class=" animated pulse">Resumé</a></li>	
 			</ul>
@@ -260,7 +265,7 @@ function myCertFunction(){
 	</div><!-- header class-->
 <br>
 
-<div class="body1">
+	<div class="body1">
 		<button onclick="myEduFunction()" id="edu_button" class="animated pulse" >Education</button>
 			<div id="edu" style="display: none" >
 				<ul>
@@ -278,27 +283,27 @@ function myCertFunction(){
 					</span></li><!-- school class-->
 				</ul>
 			</div><!-- #edu-->
-	<br>
+		<br>
 
 		<button onclick="myHisFunction()" id="his_button" class= "animated pulse">History</button>	
 			<div id="his" style="display: none;">
-			<ul>
-				<li id="personal"><span class="listTabs">Sep 2016 </span><span>my daughter, Lilly, was born!</span></li>
-				<li id="school"><span class="listTabs">Jul 2016 </span><span>began courses at Arizona State University</span></li>
-				<li id="work"><span class="listTabs">June 2016 </span><span>started full time at FJ Turbine Power, Inc.</span></li>
-				<li id="military"><span class="listTabs">May 2016 </span><span>ended active duty tour and moved to Miami, FL</span></li>	
-				<li id="personal"><span class="listTabs">Apr 2015 </span><span>my son, Everett, was born!</span></li>
-				<li id="military"><span class="listTabs">Apr 2015 </span><span>returned from deployment just in time</span></li>
-				<li id="military"><span class="listTabs">Sep 2014 </span><span>deployed in support of Operation Inherent Resolve</span></li>
-				<li id="military"><span class="listTabs">Jun 2014 </span><span>graduated with highest honors from Nondestructive Inspectors course from NAS Pensacola, FL.</span></li>
-				<li id="military"><span class="listTabs">May 2012 </span><span>stationed in MCAS Yuma, AZ.</span></li>	
-				<li id="military"><span class="listTabs">Aug 2011 </span><span>left for USMC bootcamp</span></li>
-				<li id="work"><span class="listTabs">May 2010 </span><span>began working at Preston-Link Electric as an electrician</span></li>
-				<li id="school"><span class="listTabs">Jan 2009 </span><span>began classes at Florida State</span></li>
-				<li id="school"><span class="listTabs">Dec 2008 </span><span>gruaduated with an associates from Santa Fe College</span></li>
-			</ul>			
-		</div><!-- his id-->
-	<br>
+				<ul>
+					<li id="personal"><span class="listTabs">Sep 2016 </span><span>my daughter, Lilly, was born!</span></li>
+					<li id="school"><span class="listTabs">Jul 2016 </span><span>began courses at Arizona State University</span></li>
+					<li id="work"><span class="listTabs">June 2016 </span><span>started full time at FJ Turbine Power, Inc.</span></li>
+					<li id="military"><span class="listTabs">May 2016 </span><span>ended active duty tour and moved to Miami, FL</span></li>	
+					<li id="personal"><span class="listTabs">Apr 2015 </span><span>my son, Everett, was born!</span></li>
+					<li id="military"><span class="listTabs">Apr 2015 </span><span>returned from deployment just in time</span></li>
+					<li id="military"><span class="listTabs">Sep 2014 </span><span>deployed in support of Operation Inherent Resolve</span></li>
+					<li id="military"><span class="listTabs">Jun 2014 </span><span>graduated with highest honors from Nondestructive Inspectors course from NAS Pensacola, FL.</span></li>
+					<li id="military"><span class="listTabs">May 2012 </span><span>stationed in MCAS Yuma, AZ.</span></li>	
+					<li id="military"><span class="listTabs">Aug 2011 </span><span>left for USMC bootcamp</span></li>
+					<li id="work"><span class="listTabs">May 2010 </span><span>began working at Preston-Link Electric as an electrician</span></li>
+					<li id="school"><span class="listTabs">Jan 2009 </span><span>began classes at Florida State</span></li>
+					<li id="school"><span class="listTabs">Dec 2008 </span><span>gruaduated with an associates from Santa Fe College</span></li>
+				</ul>			
+			</div><!-- his id-->
+		<br>
 
 		<button onclick="myProjFunction()" id="proj_button" class="animated pulse">Projects</button>
 			<div id="proj" style="display: none;">
@@ -310,7 +315,7 @@ function myCertFunction(){
 					<li id="personal"><span class="listTabs">Rock-Paper-Scissors</span><span> I have created a simple game of rock-paper-scissors in GitHub, follow <a href="https://github.com/jzorr/RockPaperScissors" target="_blank">this link</a> to try it out!</span></li>
 				</ul>
 			</div> <!-- proj id-->
-	<br>
+		<br>
 
 		<button onclick="myCertFunction()" id="cert_button" class="animated pulse">Certifications</button>
 			<div id="cert" style="display: none;">
@@ -320,15 +325,15 @@ function myCertFunction(){
 					<li id="work"><span class="listTabs">Airframe Mechanic Journeyman </span><span> Department of Labor</span></li>
 				</ul>
 			</div> <!-- cert id-->
-</div><!--body1-->
- 
- 	<!----------------------------- This begins the html for the rock paper scissors game ------------------------>
-   <div class="yesPlay">
-            <button onclick="myFunction()">Click here to play Rock-Paper-Scissors</button>
-   </div> 
-
+	 </div><!--body1-->
+</div> 
+<!----------------------------- This begins the html for the rock paper scissors game ------------------------>
+<div class="gameDiv">
+  <div class="yesPlay">
+	   <button onclick="myFunction()">Click here to play Rock-Paper-Scissors</button>
+    </div> 
 	<div class="game" style="">    
-     <div id="compChoice">
+       <div id="compChoice">
      	<script type="text/javascript" >
      	function myFunction(){
             var userChoice = prompt("Do you choose rock, paper or scissors?");
@@ -345,7 +350,7 @@ function myCertFunction(){
 
             var compare = function (choice1, choice2){
                 if (choice1 === choice2){
-                     return ("The result is a tie!");
+                     return ("Wow, you tied!");
                 }
                 
                 else if (choice1 === "rock"){
@@ -381,17 +386,15 @@ function myCertFunction(){
                 }
             }
 
-            var result = compare(userChoice, computerChoice);
-             document.getElementById("myP").style.font = "17px sans-serif";
-            document.getElementById("myP").innerHTML = (x + result);           
-        }
-     	</script>   	
-      </div>
+	            var result = compare(userChoice, computerChoice);
+	            // var y = x.fontsize(4);
+	            document.getElementById("myP").style.font = "15px sans-serif";
+	            document.getElementById("myP").innerHTML = (x.fontsize(3) + result);           
+	    }
+	    </script>   	
+      	</div>
      <p id="myP"></p>           
-	</div> <!--game end-->
-   
-  </div>
-</div>
-
+	</div> <!--game end-->  
+</div> <!-- gameDiv------>
 </body>
 </html>
