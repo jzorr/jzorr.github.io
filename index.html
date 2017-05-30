@@ -173,6 +173,13 @@ button:hover{
 /*
 ---------------------This starts the RockPaperScissors game---------
 */
+
+.rps-button{
+	background-color: #4b5320;
+	border: none;
+	color: white;
+}
+
 .gameDiv{
 	margin:0;
 }
@@ -330,7 +337,7 @@ function myCertFunction(){
 <!----------------------------- This begins the html for the rock paper scissors game ------------------------>
 <div class="gameDiv">
   <div class="yesPlay">
-	   <button onclick="myFunction()">Click here to play Rock-Paper-Scissors</button>
+	   <button onclick="myFunction()" class="rps-button btn btn-default btn-sm">Click here to play Rock-Paper-Scissors</button>
     </div> 
 	<div class="game" style="">    
        <div id="compChoice">
@@ -389,7 +396,7 @@ function myCertFunction(){
 	            var result = compare(userChoice, computerChoice);
 	            // var y = x.fontsize(4);
 	            document.getElementById("myP").style.font = "15px sans-serif";
-	            document.getElementById("myP").innerHTML = (x.fontsize(3) + result);           
+	            document.getElementById("myP").innerHTML = (x.fontsize(4) + result);           
 	    }
 	    </script>   	
       	</div>
